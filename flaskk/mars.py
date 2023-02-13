@@ -16,7 +16,7 @@ def index(title):
 
 @app.route('/training/<prof>')
 def index1(prof):
-    return render_template('training.html', title='training', prof=prof)
+    return render_template('train.html', title='training', prof=prof)
 
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
